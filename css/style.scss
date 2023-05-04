@@ -25,7 +25,7 @@ $box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 @mixin titleText($titleSize) {
     font-size: $titleSize;
     text-transform: capitalize;
-    color: black;
+    color:$black;
 }
 @mixin graphText($graphSize) {
     font-size: $graphSize;
@@ -44,5 +44,33 @@ html{
     }
     &::-webkit-scrollbar-thumb{
         background: $green;
+    }
+}
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background: $white;
+    box-shadow: $box-shadow;
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+
+    .logo{
+        margin-right: auto;
+        @include titleText(2.5rem);
+        font-weight: bolder;
+
+        i{
+            color:$green;
+        }
+    }
+    .navbar a{
+        margin-right: 2rem;
+        @include titleText(2rem);
+        font-weight: bolder;
+        &:hover{
+            color: $green;
+        }
     }
 }
