@@ -65,14 +65,24 @@ html{
             color:$green;
         }
     }
-    .navbar a{
-        margin-right: 2rem;
-        @include titleText(2rem);
-    
-        &:hover{
-            color: $green;
+    .navbar{
+        position: relative;
+
+        #close-navbar{
+            position: absolute;
+            top: 1.5rem; right: 2rem;
+            font-size: 4rem;
         }
-    }
+        
+        a{
+            margin-right: 2rem;
+            @include titleText(2rem);
+        
+            &:hover{
+                color: $green;
+            }
+        }
+    } 
     
     .icons div{
         cursor: pointer;
@@ -117,6 +127,11 @@ html{
             display: flex;
             flex-flow: column;
             justify-content: center;
+
+            &.active{
+                box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+                right: 0;
+            }
 
             a{
                 display: block;

@@ -46,6 +46,15 @@ html::-webkit-scrollbar-thumb {
 .header .logo i {
   color: #0eb582;
 }
+.header .navbar {
+  position: relative;
+}
+.header .navbar #close-navbar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+}
 .header .navbar a {
   margin-right: 2rem;
   font-size: 2rem;
@@ -95,6 +104,10 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     flex-flow: column;
     justify-content: center;
+  }
+  .header .navbar.active {
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    right: 0;
   }
   .header .navbar a {
     display: block;
