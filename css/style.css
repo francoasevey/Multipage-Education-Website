@@ -114,12 +114,34 @@ html::-webkit-scrollbar-thumb {
   padding: 2rem;
   text-align: center;
 }
-.account-form h3 {
+.account-form form h3 {
   font-size: 2.5rem;
   text-transform: capitalize;
   color: #444;
   padding-bottom: 0.5rem;
   text-transform: uppercase;
+}
+.account-form form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #0eb582;
+  font-size: 1.6rem;
+  margin: 0.7rem 0;
+}
+.account-form form .flex {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.account-form form .flex label {
+  font-size: 1.5rem;
+  color: #777;
+  cursor: pointer;
+}
+.account-form form .flex a {
+  font-size: 1.5rem;
+  color: #777;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
