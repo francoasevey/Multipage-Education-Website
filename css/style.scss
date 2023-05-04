@@ -46,6 +46,9 @@ html{
         background: $green;
     }
 }
+section{
+    padding: 5rem 10%;
+}
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -123,7 +126,7 @@ html{
 }
 .account-form{
     position: fixed;
-    top: 0; right: 0;
+    top: 0; right: -105%;
     width: 35rem;
     background: $white;
     display: flex;
@@ -131,11 +134,15 @@ html{
     gap: 2rem;
     justify-content: center;
     height: 100%;
-    box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
     z-index: 1200;
     padding: 2rem;
     text-align: center;
+    
+    &.active{
+        right: 0;
+        box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
 
+    }
     #close-form{
         position: absolute;
         top: 1.5rem; right: 2.5rem;
@@ -203,10 +210,63 @@ html{
         }
     }
 }
+.footer{
+    background: $light-green;
+
+    .box-container{
+        @include grid(25rem);
+
+        .box{
+            h3{
+                @include titleText(2.2rem);
+                padding: 1rem 0;
+
+                i{
+                    color: $green
+                }
+            }
+            .link{
+                @include graphText(1.7rem);
+                padding: .5rem 0;
+                display: block;
+
+                &:hover{
+                    color: $green;
+                    text-decoration: underline;
+                }
+            }
+            p{
+                @include graphText(1.5rem);
+                padding: 1rem 0;
+            }
+            .email{
+                width: 100%;
+                padding: 1.2rem 1.4rem;
+                font-size: 1.6rem;
+                border: $border;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .credit{
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 3rem;
+        @include titleText(2rem);
+        border: $border;
+        
+        span{
+            color: $green;
+        }
+    }
+}
 
 @media (max-width:1200px){
     .header{
         padding: 2rem 5%;
+    }
+    section{
+        padding: 3rem 5%;
     }
 }
 @media (max-width:991px){
@@ -215,6 +275,9 @@ html{
     }
     .header{
         padding: 2rem;
+    }
+    section{
+        padding: 3rem 2rem;
     }
 }
 @media (max-width:768px){
