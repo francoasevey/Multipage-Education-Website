@@ -225,6 +225,24 @@ section{
                     color: $green
                 }
             }
+            .share{
+                margin-top: 1rem;
+
+                a{
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    line-height: 4.5rem;
+                    font-size: 1.7rem;
+                    background-color: $green;
+                    color: $white;
+                    margin-right: .3rem;
+                    text-align: center;
+
+                    &:hover{
+                        background-color: $black;
+                    }
+                }
+            }
             .link{
                 @include graphText(1.7rem);
                 padding: .5rem 0;
@@ -253,8 +271,8 @@ section{
         margin-top: 3rem;
         padding-top: 3rem;
         @include titleText(2rem);
-        border: $border;
-        
+        border-top: $border;
+
         span{
             color: $green;
         }
