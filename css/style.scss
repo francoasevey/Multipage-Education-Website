@@ -46,6 +46,22 @@ html{
         background: $green;
     }
 }
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border: $border;
+    background: $light-green;
+    color: $green;
+    cursor: pointer;
+    text-transform: capitalize;
+
+    &:hover{
+        background: $green;
+        color: $white;
+    }
+}
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
@@ -118,6 +134,7 @@ html{
     box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
     z-index: 1200;
     padding: 2rem;
+    text-align: center;
 
     #close-form{
         position: absolute;
@@ -133,7 +150,11 @@ html{
     form{
         border: $border;
         padding: 2rem;
-        text-align: center;
+        display: none;
+
+        &.active{
+            display: block;
+        }
    
         h3{
             @include titleText(2.5rem);
@@ -151,7 +172,8 @@ html{
             padding: 1rem 0;
             display: flex;
             align-items: center;
-    
+            gap: .5rem;
+
             label{
                 font-size: 1.5rem;
                 color: $light-color;
@@ -160,8 +182,24 @@ html{
             a{
                 font-size: 1.5rem;
                 color: $light-color;
-                cursor: pointer;
+                margin-left: auto;
+
+                &:hover{
+                    text-decoration: underline;
+                    color: $green;
+                }
             }
+        }
+        .btn{
+            width: 100%;
+        }
+    }
+    .buttons .btn{
+        margin: 0 .5rem;
+        
+        &.active{
+            background: $green;
+            color: $white;
         }
     }
 }
