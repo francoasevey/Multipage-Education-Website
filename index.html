@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -53,9 +54,9 @@
     </div>
 
     <section class="home">
-        <div class="home-slider">
-            <div class="w">
-                <section class="slide" style="background: url(/images/1.jpg) no-repeat;">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide slide" style="background: url(/images/1.jpg) no-repeat;">
                     <div class="content">
                         <h3>the best courses you will find find here!</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum culpa quisquam saepe</p>
@@ -63,7 +64,7 @@
                     </div>
                 </section>
 
-                <section class="slide" style="background: url(/images/2.jpg) no-repeat;">
+                <section class="swiper-slide slide" style="background: url(/images/2.jpg) no-repeat;">
                     <div class="content">
                         <h3>the best courses you will find find here!</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum culpa quisquam saepe</p>
@@ -71,7 +72,7 @@
                     </div>
                 </section>
 
-                <section class="slide" style="background: url(/images/3.jpg) no-repeat;">
+                <section class="swiper-slide slide" style="background: url(/images/3.jpg) no-repeat;">
                     <div class="content">
                         <h3>the best courses you will find find here!</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum culpa quisquam saepe</p>
@@ -81,6 +82,7 @@
 
                 
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     
@@ -122,6 +124,7 @@
         </div>
         <div class="credit"> created by <span>frank dev</span> | all rights reserved!</div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="/js/script.js"></script>
 </body>
