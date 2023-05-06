@@ -237,8 +237,29 @@ section {
   background: #f0fdfa;
   cursor: pointer;
 }
+.subjects .box-container .box:hover {
+  background: #0eb582;
+}
+.subjects .box-container .box:hover h3 {
+  color: #fff;
+}
+.subjects .box-container .box:hover p {
+  color: #eee;
+}
 .subjects .box-container .box img {
-  height: 3px;
+  height: 10rem;
+  margin-bottom: 0.7rem;
+}
+.subjects .box-container .box h3 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: 0.5rem 0;
+}
+.subjects .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
 }
 
 .footer {
