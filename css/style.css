@@ -225,6 +225,22 @@ section {
   background: #0eb582;
 }
 
+.subjects .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+.subjects .box-container .box {
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 0.1rem solid #0eb582;
+  background: #f0fdfa;
+  cursor: pointer;
+}
+.subjects .box-container .box img {
+  height: 3px;
+}
+
 .footer {
   background: #f0fdfa;
 }

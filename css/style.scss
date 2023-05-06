@@ -243,6 +243,23 @@ section{
 .swiper-pagination-bullet-active{
     background: $green;
 }
+.subjects{
+    .box-container{
+        @include grid(16rem);
+
+        .box{
+            padding: 3rem 2rem;
+            text-align: center;
+            border: $border;
+            background: $light-green;
+            cursor: pointer;
+
+            img{
+                height: 3px;
+            }
+        }
+    }
+}
 .footer{
     background: $light-green;
 
