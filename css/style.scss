@@ -306,7 +306,7 @@ section{
         .content{
             position: absolute;
             bottom: -100%; right: 0; left: 0;
-            background: $black;
+            background: $green;
             padding: 2rem 3rem;
 
             h3{
@@ -318,6 +318,10 @@ section{
                 padding: 1rem 0;
                 @include graphText(1.5rem);
                 color: $light-white;
+            }
+
+            .btn:hover{
+                background: $black;
             }
         }
     }

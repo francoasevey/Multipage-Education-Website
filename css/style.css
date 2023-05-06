@@ -289,7 +289,7 @@ section {
   bottom: -100%;
   right: 0;
   left: 0;
-  background: #444;
+  background: #0eb582;
   padding: 2rem 3rem;
 }
 .home-courses .slide .content h3 {
@@ -304,6 +304,9 @@ section {
   line-height: 2;
   color: #777;
   color: #eee;
+}
+.home-courses .slide .content .btn:hover {
+  background: #444;
 }
 
 .footer {
