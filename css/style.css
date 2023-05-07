@@ -10,6 +10,12 @@
   transition: all 0.2s linear;
 }
 
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
