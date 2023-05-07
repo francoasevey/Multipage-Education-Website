@@ -375,6 +375,17 @@ section{
             @include graphText(1.5rem);
             padding: 1rem 0;
         }
+
+        .icons-container{
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+            .icons{
+                flex:  1 1 16rem;
+            }
+        }
     };
 }
 .footer{

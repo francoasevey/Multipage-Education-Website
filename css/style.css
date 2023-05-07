@@ -364,6 +364,15 @@ section {
   color: #777;
   padding: 1rem 0;
 }
+.about .content .icons-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.about .content .icons-container .icons {
+  flex: 1 1 16rem;
+}
 
 .footer {
   background: #f0fdfa;
