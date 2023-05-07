@@ -351,6 +351,23 @@ section{
         }
     }
 }
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    .image{
+        flex: 1 1 40rem;
+
+        img{
+            width: 100%;
+        }
+    }
+    .content{
+        flex: 1 1 40rem
+    };
+}
 .footer{
     background: $light-green;
 
