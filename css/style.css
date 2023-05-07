@@ -353,6 +353,17 @@ section {
 .about .content {
   flex: 1 1 40rem;
 }
+.about .content .about-title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.about .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  padding: 1rem 0;
+}
 
 .footer {
   background: #f0fdfa;
