@@ -384,6 +384,24 @@ section{
 
             .icons{
                 flex:  1 1 16rem;
+                text-align: center;
+                border: $border;
+                background: $light-green;
+                padding: 3rem 2rem;
+
+                img{
+                    height: 7rem;
+                    margin-bottom: .5rem;
+                }
+
+                h3{
+                    padding: .5rem 0;
+                    @include titleText(2rem)
+                }
+
+                span{
+                    @include graphText(1.5rem);
+                }
             }
         }
     };
