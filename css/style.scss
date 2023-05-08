@@ -309,7 +309,6 @@ section{
     .slide{
         text-align: center;
         position: relative;
-        width: 30rem;
         background: $light-green;
         overflow: hidden;
 
@@ -404,7 +403,36 @@ section{
     };
 }
 .teachers{
-    
+    .slide{
+        text-align: center;
+        width: 30rem;
+
+        .image{
+            position: relative;
+            overflow: hidden;
+
+            img{
+                background: $light-green;
+                width: 100%;
+            }
+            .share{
+                position: absolute;
+                bottom: 0; left: 0; right: 0;
+                background: rgba(0,0,0,.8);
+                padding: 3rem;
+
+                a{
+                    font-synthesis: 3rem;
+                    margin: 0 1rem;
+                    color: $white;
+
+                    &:hover{
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
 }
 .footer{
     background: $light-green;
