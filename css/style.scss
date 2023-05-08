@@ -443,6 +443,20 @@ section{
                 }
             }
         }
+        .content{
+            display: flex;
+            padding-top: 1rem;
+            align-items: center;
+            justify-content: space-between;
+
+            h3{
+                @include titleText(2rem);
+            }
+
+            span{
+                @include graphText(1.5rem);
+            }
+        }
     }
 }
 .footer{

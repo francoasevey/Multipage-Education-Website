@@ -425,6 +425,22 @@ section {
 .teachers .slide .image .share a:hover {
   color: #0eb582;
 }
+.teachers .slide .content {
+  display: flex;
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.teachers .slide .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.teachers .slide .content span {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
 
 .footer {
   background: #f0fdfa;
