@@ -407,6 +407,17 @@ section{
         text-align: center;
         width: 30rem;
 
+        &:hover{
+            .image{
+                img{
+                    background: $green;
+                }
+                .share{
+                    bottom: 0;
+                }
+            }
+        }
+
         .image{
             position: relative;
             overflow: hidden;
@@ -417,12 +428,12 @@ section{
             }
             .share{
                 position: absolute;
-                bottom: 0; left: 0; right: 0;
+                bottom: -10rem; left: 0; right: 0;
                 background: rgba(0,0,0,.8);
-                padding: 3rem;
+                padding: 2rem;
 
                 a{
-                    font-synthesis: 3rem;
+                    font-size: 3rem;
                     margin: 0 1rem;
                     color: $white;
 
