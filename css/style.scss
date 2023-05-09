@@ -706,6 +706,14 @@ section{
         }
     }
 }
+.logo-container{
+    text-align: center;
+
+    img{
+        height: 10rem;
+        pointer-events: none;
+    }
+}
 .footer{
     background: $light-green;
 
